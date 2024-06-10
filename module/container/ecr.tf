@@ -1,7 +1,7 @@
 resource "aws_ecr_repository" "ecr_frontend" {
-    name = "${var.tag_name}-frontend"
+    name = "${var.container_name}-frontend"
 }
 
 resource "aws_ecr_repository" "ecr_backend" {
-    name = "${var.tag_name}-backend"
+    name = "${var.container_name}-backend"
 }

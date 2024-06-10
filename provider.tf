@@ -11,9 +11,9 @@ terraform {
   }
 
    backend "s3" {
-     dynamodb_table = "weplat-terraform-lock"
+     dynamodb_table = "weplat-ap2-terraform-lock"
      key            = "dev/terraform.tfstate"
-     bucket         = "weplat-terraform-repo-1"
+     bucket         = "weplat-ap2-terraform-repo-1"
      encrypt        = true
      region         = "ap-northeast-2"
    }

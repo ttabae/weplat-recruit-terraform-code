@@ -1,8 +1,8 @@
 ### Key Pair 생성 ###
-resource "aws_key_pair" "keypair" {
-    public_key = file("./.ssh/weplat-key.pub")
-    key_name = "${var.tag_name}-key"
-}
+# resource "aws_key_pair" "keypair" {
+#     public_key = file("./.ssh/weplat-key.pub")
+#     key_name = "${var.tag_name}-key"
+# }
 
 ### Bastion EC2 생성 ###
 resource "aws_instance" "bastion_ec2" {
